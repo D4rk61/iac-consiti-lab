@@ -19,7 +19,6 @@ variable "aws_defautlt_zone" {
 variable "aws_access_key_id" {
   type        = string
   description = "access key id"
-  default     = "AKIA5FTZCPXBLIYPQOOL"
 
 }
 
@@ -28,5 +27,4 @@ variable "aws_secret_key" {
   type = string
 
   description = "secret key"
-  default     = "6QoG6E2on/SDCVC0SYnN7YCdS2K8P3c1F7L51mjR"
 }
