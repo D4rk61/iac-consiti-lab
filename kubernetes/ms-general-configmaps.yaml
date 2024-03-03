@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sqs-microservices-configmap
+data:
+  AWS_ACCESS_KEY: "AKIA5FTZCPXBIIDYNT2V"
+  AWS_SECRET_KEY: "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"
+  AWS_REGION: "us-east-1"
+  AWS_SQS_NAME: "consiti-lab-spring-connection"

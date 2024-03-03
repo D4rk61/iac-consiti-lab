@@ -12,3 +12,7 @@ output "sqs_queue_url" {
   value = aws_sqs_queue.sqs_queue.url
 }
   
+output "sqs_queue_name" {
+  sensitive = true
+  value = aws_sqs_queue.sqs_queue.name
+}
