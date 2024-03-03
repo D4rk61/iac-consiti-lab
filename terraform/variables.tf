@@ -16,17 +16,3 @@ variable "aws_defautlt_zone" {
   default     = "us-east-1"
 }
 
-variable "aws_access_key_id" {
-  type        = string
-  description = "access key id"
-  default     = "AKIA5FTZCPXBL2H66VMO"
-
-}
-
-variable "aws_secret_key" {
-
-  type = string
-
-  description = "secret key"
-  default     = "jJJMItg0raVtYW6H3/UU4ecAUPIC2MPFHUTnCiAH"
-}
