@@ -30,7 +30,7 @@ locals {
 }
 
 locals {
-  sqs_connection_url = "sqs_url,sqs_name\n${module.sqs.sqs_queue_url},${module.sqs.sqs_queue_name}"
+  sqs_connection_url = "sqs_url,sqs_name,sqs_region\n${module.sqs.sqs_queue_url},${module.sqs.sqs_queue_name},${var.aws_defautlt_zone}"
 }
 
 resource "local_file" "sqs_user_keys" {
@@ -41,4 +41,10 @@ resource "local_file" "sqs_user_keys" {
 resource "local_file" "sqs_url" {
   content  = local.sqs_connection_url
   filename = "sqs-url.csv"
+}
+
+
+## Ejecutarlo en cloudshell
+output "kubectl_connection" {
+  value = module.gke.kubectl_connection
 }

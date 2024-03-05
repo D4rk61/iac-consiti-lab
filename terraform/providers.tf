@@ -27,3 +27,9 @@ provider "aws" {
   access_key = var.aws_access_key_id
   secret_key = var.aws_secret_key
 }
+
+provider "google" {
+  credentials = file("") # Archivo de credenciales
+  project     = var.google_project_id
+
+}

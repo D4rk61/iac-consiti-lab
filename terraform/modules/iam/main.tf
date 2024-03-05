@@ -37,7 +37,7 @@ resource "aws_iam_user_policy" "sqs_connection_policy" {
   user = aws_iam_user.sqs_connection_user.name
 
   // de alguna forma traer la olitica creada en el modulo SQS
-  policy = var.sqs_policy_json  
+  policy = var.sqs_policy_json
 }
 
 resource "aws_iam_user_policy_attachment" "sqs_connection_user_policy" {
